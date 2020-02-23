@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "start": "next start",
+    "dev": "node serverexpress.js",
+    "start": "NODE_ENV=production node serverexpress.js",
     "build": "next build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
+    "express": "^4.17.1",
     "next": "^9.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
